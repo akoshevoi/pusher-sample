@@ -34,10 +34,7 @@ const App = () => {
     const username = window.prompt("Username", "John");
     setAppState({ ...appState, username });
 
-    const pusher = new Pusher("d1b131a24f37362ce861", {
-      cluster: "eu",
-      authEndpoint: "http://localhost:5000/pusher/auth",
-    });
+    const pusher = new Pusher("d1b131a24f37362ce861", { cluster: "eu" });
 
     setPusherInstance(pusher);
   }, []); // eslint-disable-line
