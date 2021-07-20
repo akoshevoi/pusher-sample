@@ -1,0 +1,10 @@
+.message-container {
+  display: flex;
+  padding: 10px 0;
+}
+
+.message {
+  min-width: 80px;
+  padding: 5px 10px;
+  text-align: center;
+}
